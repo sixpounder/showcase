@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;400;700&family=Share+Tech+Mono&display=swap'); */
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;400;700&family=VT323&display=swap');
+
+  :root {
+    --onyx: #1b2021;
+    --lemon: #fcff6c;
+    --cerulean: #00a5cf;
+  }
+
+  html {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+  }
+}
