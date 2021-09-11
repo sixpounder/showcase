@@ -1,7 +1,7 @@
 <template>
   <header
     id="head-section"
-    class="flex flex-col justify-center items-center relative"
+    class="flex flex-col justify-center items-center relative md:container md:mx-auto"
   >
     <Ufo
       :appear-delay="0"

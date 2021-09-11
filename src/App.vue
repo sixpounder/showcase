@@ -24,6 +24,6 @@ const scrollToOverview = ref(() => {
 
 <style lang="stylus" scoped>
 #head-section, #overview-section {
-  @apply: h-screen;
+  @apply min-h-screen;
 }
 </style>

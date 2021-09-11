@@ -8,10 +8,6 @@
 import { computed, onMounted, PropType, ref } from "vue"
 
 const props = defineProps({
-  position: {
-    type: Array as PropType<Array<string>>,
-    required: true
-  },
   appear: {
     type: Boolean,
     required: false,
