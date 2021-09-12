@@ -1,29 +1,32 @@
 <template>
   <section
-    id="overview-section"
+    id="art-section"
     :class="outerClassBindings"
     class="
+      relative
       bg-gradient-to-r
       from-primary
       to-secondary
       min-h-screen
       overflow-hidden
-      hero
       text-primary-content
-      py-8
     "
   >
-    <div class="md:container md:mx-auto px-8 h-full">
+    <img src="../assets/wave.svg" class="w-full absolute left-2 -top-1 hidden md:block"/>
+    <div class="md:container md:mx-auto p-8 h-full">
       <div class="grid grid-flow-row grid-cols-1 md:grid-cols-2 gap-4">
         <OverviewCard title="15+ Years of experience">
-          Rerum reiciendis beatae tenetur excepturi aut pariatur est eos. Sit
-          sit necessitatibus veritatis sed molestiae voluptates incidunt iure
-          sapiente.
+          Senior software developer offering 15+ years of experience in
+          demanding environments focused on producing cutting-edge systems for
+          web platforms. Skilled in directing development with creative and
+          performance-oriented approach. Well-organized and customer-focused
+          with proven skills in software architecture design.
         </OverviewCard>
         <OverviewCard title="Software Design & Development">
-          Rerum reiciendis beatae tenetur excepturi aut pariatur est eos. Sit
-          sit necessitatibus veritatis sed molestiae voluptates incidunt iure
-          sapiente.
+          Developing software from ground up with measured, customer-focused
+          approach to eliminate waste and streamline implementation cycle,
+          working with a wide range of technologies, including back end analysis
+          and development.
         </OverviewCard>
         <OverviewCard title="Illustrations">
           Rerum reiciendis beatae tenetur excepturi aut pariatur est eos. Sit

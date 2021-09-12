@@ -25,9 +25,9 @@
     <Ufo
       :appear-delay="3200"
       :appear-duration="1000"
-      class="w-32 mt-8 flex flex-col justify-center align-middle"
+      class="btn-bottom-outer flex flex-col justify-center align-middle"
     >
-      <button class="btn btn-secondary" @click="next">Show more</button>
+      <button class="" @click="next">&#8595;</button>
     </Ufo>
     <!-- <Ufo
       :position="['15%', '15%']"
@@ -134,3 +134,21 @@ export default defineComponent({
   }
 });
 </script>
+
+<style lang="stylus" scoped>
+.btn-bottom-outer {
+  @apply absolute rounded-full bg-base-300 h-48 w-48 -bottom-32;
+  box-shadow 0 -10px 13px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow 0 -10px 13px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow 0 -10px 13px rgba(0, 0, 0, 0.1);
+  button {
+    transform-origin: center;
+    @apply text-gray-400 h-48 w-48 text-4xl text-center transition-all;
+    margin-top: -8rem;
+  }
+
+  &:hover button {
+    @apply text-gray-200 text-5xl
+  }
+}
+</style>
