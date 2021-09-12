@@ -1,9 +1,9 @@
 <template>
-  <div class="typewriter">
-    <span class="placeholder">|</span>
+  <span class="typewriter">
+    <span v-if="placeholder" class="placeholder">|</span>
     <span class="text" ref="element"></span>
     <span v-show="started && (running || cursorOnHalt)" class="cursor"></span>
-  </div>
+  </span>
 </template>
 
 <script lang="ts">
@@ -36,6 +36,11 @@ export default defineComponent({
       type: Boolean,
       required: false,
       default: true
+    },
+    placeholder: {
+      type: Boolean,
+      required: false,
+      default: false
     }
   },
   emits: ['start', 'end'],

@@ -4,6 +4,7 @@ import Layout from "./components/Layout.vue";
 import Header from "./components/Header.vue";
 import Art from "./components/Art.vue";
 import Development from "./components/Development.vue";
+import Contact from "./components/Contact.vue";
 
 const sectionAfterHeader: Ref<any> = ref(undefined);
 
@@ -21,6 +22,7 @@ const scrollToNext = ref(() => {
     <Header @next="scrollToNext"/>
     <Development ref="sectionAfterHeader" />
     <Art ref="overviewElement" />
+    <Contact />
   </Layout>
 </template>
 

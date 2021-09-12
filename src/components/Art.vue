@@ -10,10 +10,12 @@
       min-h-screen
       overflow-hidden
       text-primary-content
+      pt-40
     "
   >
     <img src="../assets/wave.svg" class="w-full absolute left-2 -top-1 hidden md:block"/>
     <div class="md:container md:mx-auto p-8 h-full">
+      <h1 id="uiux-title">UI/UX Designer</h1>
       <div class="grid grid-flow-row grid-cols-1 md:grid-cols-2 gap-4">
         <OverviewCard title="15+ Years of experience">
           Senior software developer offering 15+ years of experience in
@@ -100,3 +102,12 @@ export default defineComponent({
   },
 });
 </script>
+
+<style lang="stylus" scoped>
+#uiux-title
+  @apply text-4xl text-center mb-8
+  text-shadow 0px 0px 20px #570df8
+
+img
+  image-rendering crisp-edges
+</style>
