@@ -22,13 +22,16 @@
       :delay="1000"
       :duration="2000"
     />
-    <Ufo
+    <!-- <Ufo
       :appear-delay="3200"
       :appear-duration="1000"
       class="btn-bottom-outer flex flex-col justify-center align-middle"
     >
       <button class="" @click="next">&#8595;</button>
-    </Ufo>
+    </Ufo> -->
+    <div class="btn-bottom-outer flex flex-col justify-center align-middle">
+      <button class="" @click="next">&#8595;</button>
+    </div>
     <!-- <Ufo
       :position="['15%', '15%']"
       :appear-delay="1000"
