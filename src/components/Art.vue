@@ -46,7 +46,7 @@
 </template>
 
 <script lang="ts">
-import { computed, defineComponent, onMounted, ref } from "vue";
+import { computed, defineComponent, ref } from "vue";
 import Glass from "./widgets/Glass.vue";
 import OverviewCard from "./widgets/OverviewCard.vue";
 

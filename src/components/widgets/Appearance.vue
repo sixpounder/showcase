@@ -1,6 +1,10 @@
 <template>
   <div ref="slot">
-    <slot v-if="visible"/>
+    <transition name="fade-in-zoom" ref="slot">
+      <div v-if="visible">
+        <slot />
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -15,6 +19,11 @@ export default defineComponent({
       type: Boolean,
       required: false,
       default: true
+    },
+    delay: {
+      type: Number,
+      required: false,
+      default: 0
     }
   },
   setup(props) {
@@ -25,7 +34,9 @@ export default defineComponent({
       if (value === IntersectionStatus.Visible && props.once) {
         viewportObserver.value?.disconnect();
       }
-      state.value = value;
+      setTimeout(() => {
+        state.value = value;
+      }, props.delay);
     });
 
     const visible = computed(() => {
@@ -49,3 +60,22 @@ export default defineComponent({
   },
 })
 </script>
+
+<style lang="stylus" scoped>
+.fade-in-zoom-enter-active, .fade-in-zoom-leave-active {
+  animation fade-in-zoom .5s
+}
+.fade-in-zoom-enter, .fade-in-zoom-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  animation fade-in-zoom .3s reverse
+}
+
+@keyframes fade-in-zoom
+  0%
+    transform scale(1.5)
+    opacity 0
+  100%
+    transform scale(1)
+    opacity 1
+
+
+</style>

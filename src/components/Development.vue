@@ -1,8 +1,8 @@
 <template>
   <section id="dev-section" class="bg-base-300 pt-14 pb-14 relative z-10">
     <div class="md:container md:mx-auto">
-      <h1 class="text-center text-4xl">Software Architect & Developer</h1>
       <Appearance>
+        <h1 class="text-center text-4xl">Software Architect & Developer</h1>
         <div class="mockup-code mt-8">
           <pre data-prefix="$">
   <code><Typewriter
