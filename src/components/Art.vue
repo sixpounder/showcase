@@ -10,7 +10,7 @@
       min-h-screen
       overflow-hidden
       text-primary-content
-      pt-40
+      md:pt-40
     "
   >
     <img src="../assets/wave.svg" class="w-full absolute left-2 -top-1 hidden md:block"/>
