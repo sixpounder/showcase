@@ -9,9 +9,9 @@ export enum IntersectionStatus {
  * @param callback - The function fired up when the observer sees a change
  * @returns The created observer. To dispose of it, call the `disconnect` method.
  */
-export function useElementViewportObserver(el: HTMLElement, callback: (status: IntersectionStatus) => void): IntersectionObserver {
+export function observeVisibility(el: HTMLElement, callback: (status: IntersectionStatus) => void): IntersectionObserver {
   const io = new IntersectionObserver(entries => {
-    if (entries[0].intersectionRatio !== 0) {
+    if (entries[0].isIntersecting) {
       // Element enters the viewport
       callback(IntersectionStatus.Visible);
     } else {
@@ -19,7 +19,7 @@ export function useElementViewportObserver(el: HTMLElement, callback: (status: I
       callback(IntersectionStatus.Invisible);
     }
   }, {
-    threshold: 0
+    threshold: 0.1
   });
 
   io.observe(el);
