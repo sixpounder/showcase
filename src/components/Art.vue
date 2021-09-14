@@ -11,9 +11,10 @@
       overflow-hidden
       text-primary-content
       md:pt-40
+      pb-14
     "
   >
-    <img src="../assets/wave.svg" class="w-full absolute left-2 -top-1 hidden md:block"/>
+    <img id="wave-separator" src="../assets/wave.svg" class="w-full absolute left-2 -top-1 hidden md:block"/>
     <div class="md:container md:mx-auto p-8 h-full">
       <h1 id="uiux-title">UI/UX Designer</h1>
       <div class="grid grid-flow-row grid-cols-1 md:grid-cols-2 gap-4">
@@ -104,6 +105,8 @@ export default defineComponent({
 </script>
 
 <style lang="stylus" scoped>
+#wave-separator
+  filter drop-shadow(10px 10px 10px #00000060)
 #uiux-title
   @apply text-4xl text-center mb-8
   text-shadow 0px 0px 20px #570df8

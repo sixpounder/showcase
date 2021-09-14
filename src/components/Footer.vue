@@ -1,5 +1,5 @@
 <template>
-  <footer class="md:container md:mx-auto mx-8 mt-14 mb-8 text-sm text-gray-300">
+  <footer class="md:container md:mx-auto mx-8 mb-8 text-sm text-gray-300">
     <span>
       Source code for this site is available at <a href="https://github.com/sixpounder/showcase" target="noopener">this repository</a>
     </span>

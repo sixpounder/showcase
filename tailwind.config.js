@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'sans': ['Fira Sans', 'sans-serif'],
-        'mono': ['VT323', 'monospace']
+        'mono': ['Share Tech Mono', 'monospace']
       }
     },
   },

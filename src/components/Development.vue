@@ -3,7 +3,7 @@
     <div class="md:container md:mx-auto">
       <Appearance>
         <h1 class="text-center text-4xl">Software Architect & Developer</h1>
-        <div class="mockup-code mt-8">
+        <div class="mockup-code mt-14">
           <pre data-prefix="$">
   <code><Typewriter
       class="inline"
@@ -111,3 +111,8 @@ export default defineComponent({
   },
 });
 </script>
+
+<style lang="stylus" scoped>
+.mockup-code
+  min-height 1076px
+</style>

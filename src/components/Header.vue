@@ -1,7 +1,7 @@
 <template>
   <header
     id="head-section"
-    class="flex flex-col justify-center items-center relative mx-8 md:container md:mx-auto"
+    class="flex flex-col justify-center items-center relative mx-4 md:container md:mx-auto"
   >
     <Ufo
       :appear-delay="0"
@@ -10,14 +10,14 @@
       <Avatar class="justify-center align-middle" />
     </Ufo>
     <Typewriter
-      class="font-mono text-2xl font-bold text-center"
+      class="font-mono text-3xl md:text-5xl font-bold text-center"
       text="Hello, I am Andrea"
       :delay="0"
       :duration="1000"
       :cursor-on-halt="false"
     />
     <Typewriter
-      class="font-mono text-lg text-center"
+      class="font-mono text-xl md:text-2xl text-center"
       text="Software Architect & Developer - UI/UX Designer"
       :delay="1000"
       :duration="2000"
