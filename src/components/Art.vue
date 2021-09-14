@@ -14,7 +14,7 @@
       pb-14
     "
   >
-    <img id="wave-separator" src="../assets/wave.svg" class="w-full absolute left-2 -top-1 hidden md:block"/>
+    <img alt="separator" id="wave-separator" src="../assets/wave.svg" class="w-full absolute left-2 -top-1 hidden md:block"/>
     <div class="md:container md:mx-auto p-8 h-full">
       <h1 id="uiux-title">UI/UX Designer</h1>
       <div class="grid grid-flow-row grid-cols-1 md:grid-cols-2 gap-4">

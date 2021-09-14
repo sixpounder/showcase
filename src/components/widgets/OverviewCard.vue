@@ -1,7 +1,7 @@
 <template>
   <div class="card shadow-xl bg-neutral">
     <figure>
-      <img :src="image"/>
+      <img alt="Random image" :src="image"/>
     </figure>
     <div class="justify-end card-body">
       <h2 class="card-title">{{ title }}</h2>
