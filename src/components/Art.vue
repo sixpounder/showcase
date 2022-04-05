@@ -2,35 +2,11 @@
   <section
     id="art-section"
     :class="outerClassBindings"
-    class="
-      relative
-      bg-gradient-to-r
-      from-primary
-      to-secondary
-      min-h-screen
-      overflow-hidden
-      text-primary-content
-      md:pt-40
-      pb-14
-    "
   >
     <img alt="separator" id="wave-separator" src="../assets/wave.svg" class="w-full absolute left-2 -top-1 hidden md:block"/>
     <div class="md:container md:mx-auto p-8 h-full">
       <h1 id="uiux-title">UI/UX Designer</h1>
-      <div class="grid grid-flow-row grid-cols-1 md:grid-cols-2 gap-4">
-        <OverviewCard title="15+ Years of experience">
-          Senior software developer offering 15+ years of experience in
-          demanding environments focused on producing cutting-edge systems for
-          web platforms. Skilled in directing development with creative and
-          performance-oriented approach. Well-organized and customer-focused
-          with proven skills in software architecture design.
-        </OverviewCard>
-        <OverviewCard title="Software Design & Development">
-          Developing software from ground up with measured, customer-focused
-          approach to eliminate waste and streamline implementation cycle,
-          working with a wide range of technologies, including back end analysis
-          and development.
-        </OverviewCard>
+      <div class="grid grid-flow-row grid-cols-1 md:grid-cols-2 gap-4 mt-20">
         <OverviewCard title="Illustrations">
           Rerum reiciendis beatae tenetur excepturi aut pariatur est eos. Sit
           sit necessitatibus veritatis sed molestiae voluptates incidunt iure
@@ -104,13 +80,20 @@ export default defineComponent({
 });
 </script>
 
-<style lang="stylus" scoped>
-#wave-separator
-  filter drop-shadow(10px 10px 10px #00000060)
-#uiux-title
-  @apply text-4xl text-center mb-8
-  text-shadow 0px 0px 20px #570df8
+<style scoped>
+#art-section {
+  @apply relative bg-gradient-to-r from-primary to-secondary overflow-hidden text-primary-content md:pt-40 pb-14;
+}
+#wave-separator {
+  filter: drop-shadow(10px 10px 10px #00000060);
+}
 
-img
-  image-rendering crisp-edges
+#uiux-title {
+  @apply text-4xl text-center mb-8;
+  text-shadow: 0px 0px 20px #570df8;
+}
+
+img {
+  image-rendering: crisp-edges;
+}
 </style>

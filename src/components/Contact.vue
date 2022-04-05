@@ -1,6 +1,9 @@
 <template>
   <section class="md:container md:mx-auto">
     <div class="text-center flex flex-col justify-center items-center space-y-4 py-14">
+      <span class="mb-8 text-lg uppercase text-blue-300">
+        Come say hi
+      </span>
       <a
         class="contact-entry"
         href="https://github.com/sixpounder"
