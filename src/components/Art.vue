@@ -7,7 +7,12 @@
     <div class="md:container md:mx-auto p-8 h-full">
       <h1 id="uiux-title">UI/UX Designer</h1>
       <div class="grid grid-flow-row grid-cols-1 md:grid-cols-2 gap-4 mt-20">
-        <OverviewCard title="Illustrations">
+        <OverviewCard class="md:col-span-2" title="Web application design">
+          Rerum reiciendis beatae tenetur excepturi aut pariatur est eos. Sit
+          sit necessitatibus veritatis sed molestiae voluptates incidunt iure
+          sapiente.
+        </OverviewCard>
+        <OverviewCard title="Custom component kits">
           Rerum reiciendis beatae tenetur excepturi aut pariatur est eos. Sit
           sit necessitatibus veritatis sed molestiae voluptates incidunt iure
           sapiente.
@@ -63,8 +68,7 @@ export default defineComponent({
         if (entries[0].isIntersecting) {
           this.onFirstVisible();
         }
-      },
-      {
+      }, {
         threshold: 0.1,
       }
     );
@@ -90,7 +94,7 @@ export default defineComponent({
 
 #uiux-title {
   @apply text-4xl text-center mb-8;
-  text-shadow: 0px 0px 20px #570df8;
+  text-shadow: 0px 0px 40px #006fd0;
 }
 
 img {

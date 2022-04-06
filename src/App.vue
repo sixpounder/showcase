@@ -6,6 +6,7 @@ import Art from "./components/Art.vue";
 import Development from "./components/Development.vue";
 import Contact from "./components/Contact.vue";
 import Footer from "./components/Footer.vue";
+import Apps from "./components/Apps.vue";
 
 const sectionAfterHeader: Ref<any> = ref(undefined);
 
@@ -23,12 +24,13 @@ const scrollToNext = ref(() => {
     <Header @next="scrollToNext"/>
     <Development ref="sectionAfterHeader" />
     <Art ref="overviewElement" />
+    <Apps ref="appsElement" />
     <Contact />
     <Footer />
   </Layout>
 </template>
 
-<style lang="stylus" scoped>
+<style scoped>
 #head-section, #dev-section, #art-section {
   @apply min-h-screen;
 }
