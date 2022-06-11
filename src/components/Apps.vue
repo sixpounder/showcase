@@ -1,7 +1,7 @@
 <template>
   <section id="apps-section" aria-labelledby="apps-section-title">
     <h2 id="apps-section-title" class="font-mono">Apps & Libraries</h2>
-    <small>(some of them)</small>
+    <small class="mt-4 text-gray-400">(some of them)</small>
     <div role="presentation" class="apps flex flex-row flex-wrap my-20">
       <a
         class="app"
@@ -13,20 +13,24 @@
       </a>
       <a
         class="app"
-        href="https://crates.io/crates/seagul"
+        href="https://github.com/sixpounder/rustnum"
         target="noopener"
-        title="Seagul" 
+        title="Rustnum"
       >
-        <img src="../assets/image.svg" />
+        <img src="../assets/com.github.sixpounder.rustnum.svg" />
       </a>
       <a
         class="app"
-        href="https://github.com/sixpounder/manuscript"
+        href="https://crates.io/crates/seagul"
         target="noopener"
-        title="Manuscript"
+        title="Seagul"
       >
-        <img src="../assets/com.github.sixpounder.manuscript.svg" />
+        <img src="../assets/com.github.sixpounder.seagul.svg" />
       </a>
+    </div>
+
+    <div role="presentation" class="my-20 text-center font-mono">
+      ...plus many things I cannot show here, like the web components library that lies at the foundation of my company's software.
     </div>
   </section>
 </template>

@@ -23,7 +23,7 @@ const scrollToNext = ref(() => {
   <Layout>
     <Header @next="scrollToNext"/>
     <Development ref="sectionAfterHeader" />
-    <Art ref="overviewElement" />
+    <!-- <Art ref="overviewElement" /> -->
     <Apps ref="appsElement" />
     <Contact />
     <Footer />
