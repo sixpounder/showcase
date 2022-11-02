@@ -5,6 +5,14 @@
     <div role="presentation" class="apps flex flex-row flex-wrap my-20">
       <a
         class="app"
+        href="https://flathub.org/apps/details/com.github.sixpounder.GameOfLife"
+        target="noopener"
+        title="Game of Life"
+      >
+        <img src="../assets/com.github.sixpounder.GameOfLife.svg" />
+      </a>
+      <a
+        class="app"
         href="https://github.com/sixpounder/manuscript"
         target="noopener"
         title="Manuscript"
@@ -52,7 +60,7 @@ small {
 }
 
 .apps .app {
-  @apply w-full md:w-1/3;
+  @apply w-full md:w-1/2 xl:w-1/4;
 }
 
 .apps .app img {
