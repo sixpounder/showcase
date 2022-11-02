@@ -89,7 +89,8 @@
           <Delayer :ms="6500">
             <pre data-prefix=">" class="text-info">
   <code>Involved in numerous open source projects of different kinds,
-        including system utilities like <a href="https://crates.io/crates/seagul" target="noopener">Seagul</a> and free and open writing
+        including the <a href="https://flathub.org/apps/details/com.github.sixpounder.GameOfLife">Game of life simulator</a>,
+        system utilities like <a href="https://crates.io/crates/seagul" target="noopener">Seagul</a> and free and open writing
         applications like <a href="https://github.com/sixpounder/manuscript" target="noopener">Manuscript</a>
   </code>
           </pre>
