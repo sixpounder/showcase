@@ -38,7 +38,15 @@
     </div>
 
     <div role="presentation" class="my-20 text-center font-mono">
-      ...plus many things I cannot show here, like the web components library that lies at the foundation of my company's software.
+      <h3 class="text-2xl mb-2">...plus many things I cannot show here, like:</h3>
+      <ul id="other-apps-list" class="list-disc">
+        <li>
+          The web components library that lies at the foundation of my (ex) company's software.
+        </li>
+        <li>
+          A framework for microfrontend implementations developed when microfrontend weren't a thing
+        </li>
+      </ul>
     </div>
   </section>
 </template>
