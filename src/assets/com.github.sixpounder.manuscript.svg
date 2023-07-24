@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="128"
-   height="128"
-   viewBox="0 0 16384 16384"
+   width="120.08189"
+   height="120.08157"
+   viewBox="0 0 15370.482 15370.441"
    version="1.1"
    xml:space="preserve"
    style="clip-rule:evenodd;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5"
    id="svg94"
    sodipodi:docname="com.github.sixpounder.manuscript.svg"
-   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -19,7 +19,7 @@
    xmlns:serif="http://www.serif.com/"><metadata
    id="metadata98"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><sodipodi:namedview
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><sodipodi:namedview
    pagecolor="#ffffff"
    bordercolor="#666666"
    borderopacity="1"
@@ -34,17 +34,17 @@
    showgrid="false"
    units="px"
    inkscape:zoom="3.6875"
-   inkscape:cx="-43.118644"
-   inkscape:cy="93.423729"
-   inkscape:window-x="26"
-   inkscape:window-y="23"
+   inkscape:cx="-62.644068"
+   inkscape:cy="89.355932"
+   inkscape:window-x="1422"
+   inkscape:window-y="253"
    inkscape:window-maximized="0"
    inkscape:current-layer="exports"
    inkscape:showpageshadow="2"
    inkscape:pagecheckerboard="0"
    inkscape:deskcolor="#d1d1d1" />
     <g
-   transform="matrix(3.1860386,0,0,3.1860386,3790.6164,8093.4827)"
+   transform="matrix(3.1860386,0,0,3.1860386,3145.6884,7544.2789)"
    id="g59">
         <g
    id="exports"
@@ -128,7 +128,7 @@
    transform="matrix(0.985701,0,0,1,9.2945,-100)">
                             <path
    d="M 900,254.154 C 900,224.266 875.734,200 845.846,200 H 454.154 C 424.266,200 400,224.266 400,254.154 V 645.846 C 400,675.734 424.266,700 454.154,700 H 845.846 C 875.734,700 900,675.734 900,645.846 Z"
-   style="fill:none;stroke:url(#_Linear5);stroke-width:4.46000004px"
+   style="fill:none;stroke:url(#_Linear5);stroke-width:4.46px"
    id="path21"
    inkscape:connector-curvature="0" />
                         </g>

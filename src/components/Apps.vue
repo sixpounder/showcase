@@ -2,7 +2,7 @@
   <section id="apps-section" aria-labelledby="apps-section-title">
     <h2 id="apps-section-title" class="font-mono">Apps & Libraries</h2>
     <small class="mt-4 text-gray-400">(some of them)</small>
-    <div role="presentation" class="apps flex flex-row flex-wrap my-20">
+    <div role="presentation" class="apps flex flex-row flex-nowrap my-20 align-baseline space-x-6">
       <a
         class="app"
         href="https://flathub.org/apps/details/com.github.sixpounder.GameOfLife"
@@ -39,7 +39,7 @@
 
     <div role="presentation" class="my-20 text-center font-mono">
       <h3 class="text-2xl mb-2">...plus many things I cannot show here, like:</h3>
-      <ul id="other-apps-list" class="list-disc">
+      <ul id="other-apps-list">
         <li>
           The web components library that lies at the foundation of my (ex) company's software.
         </li>
