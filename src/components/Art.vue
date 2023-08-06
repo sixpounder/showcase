@@ -7,17 +7,17 @@
     <div class="md:container md:mx-auto p-8 h-full">
       <h1 id="uiux-title">UI/UX Designer</h1>
       <div class="grid grid-flow-row grid-cols-1 md:grid-cols-2 gap-4 mt-20">
-        <OverviewCard class="md:col-span-2" title="Web application design">
+        <OverviewCard class="md:col-span-2" title="Web application design" :key="Math.random()">
           Rerum reiciendis beatae tenetur excepturi aut pariatur est eos. Sit
           sit necessitatibus veritatis sed molestiae voluptates incidunt iure
           sapiente.
         </OverviewCard>
-        <OverviewCard title="Custom component kits">
+        <OverviewCard title="Custom component kits" :key="Math.random()">
           Rerum reiciendis beatae tenetur excepturi aut pariatur est eos. Sit
           sit necessitatibus veritatis sed molestiae voluptates incidunt iure
           sapiente.
         </OverviewCard>
-        <OverviewCard title="Icon sets">
+        <OverviewCard title="Icon sets" :key="Math.random()">
           Rerum reiciendis beatae tenetur excepturi aut pariatur est eos. Sit
           sit necessitatibus veritatis sed molestiae voluptates incidunt iure
           sapiente.

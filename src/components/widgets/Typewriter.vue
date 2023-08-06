@@ -11,7 +11,7 @@ import { defineComponent } from 'vue'
 import { isUndefined } from 'lodash-es'
 
 interface TypewriterData {
-  timer: number | undefined,
+  timer: number | null,
   textIndex: number
 }
 
@@ -57,7 +57,7 @@ export default defineComponent({
   },
   data () {
     return {
-      timer: undefined,
+      timer: null,
       textIndex: 0,
     } as TypewriterData
   },

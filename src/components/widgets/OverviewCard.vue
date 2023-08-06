@@ -15,20 +15,16 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent, defineProps } from "vue";
-
-export default defineComponent({
-  props: {
-    title: {
-      type: String,
-      required: true
-    },
-    image: {
-      type: String,
-      required: false,
-      default: 'https://source.unsplash.com/random/600x400'
-    }
+<script lang="ts" setup>
+defineProps({
+  title: {
+    type: String,
+    required: true
+  },
+  image: {
+    type: String,
+    required: false,
+    default: 'https://source.unsplash.com/random/600x400'
   }
-});
+})
 </script>
