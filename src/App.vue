@@ -22,7 +22,7 @@ console.log(mask)
 
 <template>
   <Layout>
-    <Header @next="scrollToNext"/>
+    <Header @next="scrollToNext" />
     <Development ref="sectionAfterHeader" />
     <!-- <Art ref="overviewElement" /> -->
     <Apps ref="appsElement" />

@@ -1,6 +1,6 @@
 <template>
-  <div ref="slot">
-    <transition name="fade-in-zoom" ref="slot">
+  <div ref="contentToReveal">
+    <transition name="fade-in-zoom">
       <div v-if="visible">
         <slot />
       </div>
@@ -8,57 +8,45 @@
   </div>
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
 import { isUndefined } from "lodash-es";
-import { computed, defineComponent, onMounted, Ref, ref } from "vue"
+import { computed, onMounted, Ref, ref } from "vue"
 import { IntersectionStatus, observeVisibility } from "../../lib/scrolling";
 
-export default defineComponent({
-  props: {
-    once: {
-      type: Boolean,
-      required: false,
-      default: true
-    },
-    delay: {
-      type: Number,
-      required: false,
-      default: 0
-    }
+const props = defineProps({
+  once: {
+    type: Boolean,
+    required: false,
+    default: true
   },
-  setup(props) {
-    const state: Ref<IntersectionStatus> = ref(IntersectionStatus.Invisible);
-    const slot: Ref<HTMLElement | undefined> = ref(undefined);
-    const viewportObserver: Ref<IntersectionObserver | undefined> = ref(undefined);
-    const viewportObserverCb = ref((value: IntersectionStatus) => {
-      if (value === IntersectionStatus.Visible && props.once) {
-        viewportObserver.value?.disconnect();
-      }
-      setTimeout(() => {
-        state.value = value;
-      }, props.delay);
-    });
-
-    const visible = computed(() => {
-      return state.value === IntersectionStatus.Visible
-    });
-
-    const mounted = onMounted(() => {
-      if (!isUndefined(slot.value)) {
-        viewportObserver.value = observeVisibility(slot.value, viewportObserverCb.value);
-      }
-    });
-
-    return {
-      mounted,
-      state,
-      slot,
-      visible,
-      viewportObserver,
-      viewportObserverCb
-    }
-  },
+  delay: {
+    type: Number,
+    required: false,
+    default: 0
+  }
 })
+
+const state: Ref<IntersectionStatus> = ref(IntersectionStatus.Invisible);
+const contentToReveal: Ref<HTMLElement | undefined> = ref(undefined);
+const viewportObserver: Ref<IntersectionObserver | undefined> = ref(undefined);
+const viewportObserverCb = ref((value: IntersectionStatus) => {
+  if (value === IntersectionStatus.Visible && props.once) {
+    viewportObserver.value?.disconnect();
+  }
+  setTimeout(() => {
+    state.value = value;
+  }, props.delay);
+});
+
+const visible = computed(() => {
+  return state.value === IntersectionStatus.Visible
+});
+
+const mounted = onMounted(() => {
+  if (!isUndefined(contentToReveal.value)) {
+    viewportObserver.value = observeVisibility(contentToReveal.value, viewportObserverCb.value);
+  }
+});
 </script>
 
 <style lang="stylus" scoped>
@@ -76,6 +64,4 @@ export default defineComponent({
   100%
     transform scale(1)
     opacity 1
-
-
 </style>
