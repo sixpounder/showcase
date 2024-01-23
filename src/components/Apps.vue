@@ -45,7 +45,7 @@
       </a>
     </div>
 
-    <div role="presentation" class="my-20 text-center font-mono">
+    <div role="presentation" class="my-10 text-center font-mono">
       <h3 class="text-2xl mb-2">...plus many things I cannot show here, like:</h3>
       <ul id="other-apps-list">
         <li>
@@ -64,7 +64,7 @@
 
 <style scoped>
 #apps-section {
-  @apply bg-base-300 px-8 py-20;
+  @apply bg-base-300 px-8 py-10;
 }
 
 #apps-section-title {
@@ -76,11 +76,12 @@ small {
 }
 
 .apps {
-  @apply my-20 grid grid-flow-row grid-cols-2 justify-items-center align-middle gap-6 md:grid-cols-3 lg:grid-cols-5;
+  @apply my-5 grid grid-flow-row grid-cols-2 justify-items-center align-middle gap-6 md:grid-cols-3 lg:grid-cols-5;
 }
 
 .apps .app {
   @apply block w-full;
+  max-width: 300px;
 }
 
 .apps .app img {
