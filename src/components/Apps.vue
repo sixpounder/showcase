@@ -2,7 +2,7 @@
   <section id="apps-section" aria-labelledby="apps-section-title">
     <h2 id="apps-section-title" class="font-mono">Apps & Libraries</h2>
     <small class="mt-4 text-gray-400">(some of them)</small>
-    <div role="presentation" class="apps flex flex-row flex-nowrap my-20 align-baseline space-x-6">
+    <div role="presentation" class="apps">
       <a
         class="app"
         href="https://flathub.org/apps/details/com.github.sixpounder.GameOfLife"
@@ -29,6 +29,14 @@
       </a>
       <a
         class="app"
+        href="https://github.com/sixpounder/jql"
+        target="noopener"
+        title="Jql"
+      >
+        <img src="../assets/com.github.sixpounder.jql.svg" />
+      </a>
+      <a
+        class="app"
         href="https://crates.io/crates/seagul"
         target="noopener"
         title="Seagul"
@@ -41,10 +49,10 @@
       <h3 class="text-2xl mb-2">...plus many things I cannot show here, like:</h3>
       <ul id="other-apps-list">
         <li>
-          The web components library that lies at the foundation of my (ex) company's software.
+          The web components library that lies at the foundation of my ex company's web stack.
         </li>
         <li>
-          A framework for microfrontend implementations developed when microfrontend weren't a thing
+          A framework for microfrontend implementations developed when microfrontends weren't a thing
         </li>
       </ul>
     </div>
@@ -67,8 +75,12 @@ small {
   @apply text-center text-sm italic block;
 }
 
+.apps {
+  @apply my-20 grid grid-flow-row grid-cols-2 justify-items-center align-middle gap-6 md:grid-cols-3 lg:grid-cols-5;
+}
+
 .apps .app {
-  @apply w-full md:w-1/2 xl:w-1/4;
+  @apply block w-full;
 }
 
 .apps .app img {
