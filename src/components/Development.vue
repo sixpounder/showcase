@@ -13,8 +13,7 @@
       :cursor-on-halt="false"
       :placeholder="false"
     />
-  </code>
-          </pre>
+  </code></pre>
           <Delayer :ms="2100">
             <pre data-prefix=">" class="text-warning">
   <code>Javascript / Typescript Specialist</code>
