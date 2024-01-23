@@ -31,11 +31,10 @@
             </pre>
             <pre data-prefix=">" class="text-warning">
   <code>Portal technology designer
-        and developer
-  </code>
+        and developer</code>
             </pre>
-            <pre data-prefix=">" class="text-info">
-  <code>Passionate, hardworking coder with
+  <code class="block text-info ml-16 mb-16 pr-16 max-w-4xl">
+        Passionate, hardworking coder with
         penchant for developing customized
         interfaces that factor in unique
         demands for accessibility,
@@ -48,7 +47,7 @@
         to promote best practices in
         web design.
   </code>
-            </pre>
+            
           </Delayer>
           <Delayer :ms="3000">
             <pre data-prefix="$">
@@ -75,8 +74,8 @@
             <pre data-prefix=">" class="text-warning">
   <code>Python</code>
             </pre>
-            <pre data-prefix=">" class="text-info">
-  <code>Developed software from ground up
+  <code class="block text-info ml-16 mb-16 pr-16 max-w-4xl">
+        Developed software from ground up
         with measured, customer-focused
         approach to eliminate waste and
         streamline implementation cycle.
@@ -84,7 +83,6 @@
         technologies, including back-end
         analysis and development.
   </code>
-            </pre>
           </Delayer>
           <Delayer :ms="5000">
             <pre data-prefix="$">
@@ -99,15 +97,15 @@
             </pre>
           </Delayer>
           <Delayer :ms="6500">
-            <pre data-prefix=">" class="text-info">
-  <code>Involved in numerous open source
+            
+  <code class="block text-info ml-16 mb-16 pr-16 max-w-4xl">
+        Involved in numerous open source
         projects of different kinds,
         including <a href="https://flathub.org/apps/details/com.github.sixpounder.GameOfLife" target="noopener">Game of life simulator</a>,
         system utilities like <a href="https://crates.io/crates/seagul" target="noopener">Seagul</a>
         and free and open writing
         applications like <a href="https://github.com/sixpounder/manuscript" target="noopener">Manuscript</a>
   </code>
-          </pre>
           </Delayer>
         </div>
       </Appearance>
