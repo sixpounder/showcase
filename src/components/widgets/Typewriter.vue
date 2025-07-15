@@ -11,7 +11,7 @@ import { defineComponent } from 'vue'
 import { isUndefined } from 'lodash-es'
 
 interface TypewriterData {
-  timer: number | null,
+  timer: NodeJS.Timeout | null,
   textIndex: number
 }
 
@@ -45,30 +45,30 @@ export default defineComponent({
   },
   emits: ['start', 'end'],
   computed: {
-    step (): number {
+    step(): number {
       return isUndefined(this.duration) ? 100 : this.duration / this.text.length;
     },
-    started (): boolean {
+    started(): boolean {
       return this.textIndex !== 0;
     },
-    running (): boolean {
+    running(): boolean {
       return this.started && this.textIndex < this.text.length
     }
   },
-  data () {
+  data() {
     return {
       timer: null,
       textIndex: 0,
     } as TypewriterData
   },
-  mounted () {
+  mounted() {
     setTimeout(() => {
       this.$emit('start');
       this.timer = setInterval(() => {
         if (this.textIndex < this.text.length) {
           const el: HTMLSpanElement = this.$refs.element as HTMLSpanElement
           el.textContent += this.text.charAt(this.textIndex)
-          this.textIndex ++;
+          this.textIndex++;
         } else {
           this.$emit('end');
         }
