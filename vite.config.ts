@@ -10,8 +10,8 @@ export default defineConfig(({ command }) => {
   } else {
     // command === 'build'
     return {
-      plugins: [vue()],
-      base: '/me/'
+      plugins: [vue()]
     }
   }
 })
+
