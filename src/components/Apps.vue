@@ -3,45 +3,24 @@
     <h2 id="apps-section-title" class="font-mono">Apps & Libraries</h2>
     <small class="mt-4 text-gray-400">(some of them)</small>
     <div role="presentation" class="apps">
-      <a
-        class="app"
-        href="https://flathub.org/apps/details/com.github.sixpounder.GameOfLife"
-        target="noopener"
-        title="Game of Life"
-      >
+      <a class="app" href="https://flathub.org/apps/details/com.github.sixpounder.GameOfLife" target="noopener"
+        title="Game of Life">
         <img src="../assets/com.github.sixpounder.GameOfLife.svg" />
       </a>
-      <a
-        class="app"
-        href="https://github.com/sixpounder/manuscript"
-        target="noopener"
-        title="Manuscript"
-      >
+      <a class="app" href="https://github.com/sixpounder/manuscript" target="noopener" title="Manuscript">
         <img src="../assets/com.github.sixpounder.manuscript.svg" />
       </a>
-      <a
-        class="app"
-        href="https://github.com/sixpounder/rustnum"
-        target="noopener"
-        title="Rustnum"
-      >
+      <a class="app" href="https://github.com/sixpounder/rustnum" target="noopener" title="Rustnum">
         <img src="../assets/com.github.sixpounder.rustnum.svg" />
       </a>
-      <a
-        class="app"
-        href="https://github.com/sixpounder/jql"
-        target="noopener"
-        title="Jql"
-      >
+      <a class="app" href="https://github.com/sixpounder/jql" target="noopener" title="Jql">
         <img src="../assets/com.github.sixpounder.jql.svg" />
       </a>
-      <a
-        class="app"
-        href="https://crates.io/crates/seagul"
-        target="noopener"
-        title="Seagul"
-      >
+      <a class="app" href="https://crates.io/crates/seagul" target="noopener" title="Seagul">
         <img src="../assets/com.github.sixpounder.seagul.svg" />
+      </a>
+      <a class="app" href="https://github.com/sixpounder/pigeon" target="noopener" title="Pigeon">
+        <img src="../assets/com.github.sixpounder.pigeon.svg" />
       </a>
     </div>
 
@@ -76,7 +55,7 @@ small {
 }
 
 .apps {
-  @apply my-5 grid grid-flow-row grid-cols-2 justify-items-center align-middle gap-6 md:grid-cols-3 lg:grid-cols-5;
+  @apply my-5 grid grid-flow-row grid-cols-2 md:grid-cols-3 justify-items-center align-middle gap-6;
 }
 
 .apps .app {
