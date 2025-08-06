@@ -32,7 +32,7 @@
   <code>Portal technology designer
         and developer</code>
             </pre>
-  <code class="block text-info ml-16 mb-16 pr-16 max-w-4xl">
+            <code class="block text-info ml-16 mb-16 pr-16 max-w-4xl">
         Passionate, hardworking coder with
         penchant for developing customized
         interfaces that factor in unique
@@ -46,7 +46,7 @@
         to promote best practices in
         web design.
   </code>
-            
+
           </Delayer>
           <Delayer :ms="3000">
             <pre data-prefix="$">
@@ -73,7 +73,7 @@
             <pre data-prefix=">" class="text-warning">
   <code>Python</code>
             </pre>
-  <code class="block text-info ml-16 mb-16 pr-16 max-w-4xl">
+            <code class="block text-info ml-16 mb-16 pr-16 max-w-4xl">
         Developed software from ground up
         with measured, customer-focused
         approach to eliminate waste and
@@ -83,7 +83,40 @@
         analysis and development.
   </code>
           </Delayer>
-          <Delayer :ms="5000">
+          <Delayer :ms="6000">
+            <pre data-prefix="$">
+  <code><Typewriter
+      class="inline"
+      text="cat microservices-architectures"
+      :delay="0"
+      :duration="1000"
+      :cursor-on-halt="false"
+      :placeholder="false"
+    /></code>
+            </pre>
+          </Delayer>
+          <Delayer :ms="7500">
+            <pre data-prefix=">" class="text-warning">
+  <code>Java</code>
+            </pre>
+            <pre data-prefix=">" class="text-warning">
+  <code>Spring Boot</code>
+            </pre>
+            <pre data-prefix=">" class="text-warning">
+  <code>Kafka</code>
+            </pre>
+            <pre data-prefix=">" class="text-warning">
+  <code>Kafka Streams</code>
+            </pre>
+            <pre data-prefix=">" class="text-warning">
+  <code>Kafka Connect</code>
+            </pre>
+            <code class="block text-info ml-16 mb-16 pr-16 max-w-4xl">
+        Proficient in microservices oriented architecture design and development,
+        primarly using the Spring Boot / Kafka streams ecosystem.
+  </code>
+          </Delayer>
+          <Delayer :ms="8500">
             <pre data-prefix="$">
   <code><Typewriter
       class="inline"
@@ -95,9 +128,9 @@
     /></code>
             </pre>
           </Delayer>
-          <Delayer :ms="6500">
-            
-  <code class="block text-info ml-16 mb-16 pr-16 max-w-4xl">
+          <Delayer :ms="10000">
+
+            <code class="block text-info ml-16 mb-16 pr-16 max-w-4xl">
         Involved in numerous open source
         projects of different kinds,
         including <a href="https://flathub.org/apps/details/com.github.sixpounder.GameOfLife" target="noopener">Game of life simulator</a>,
